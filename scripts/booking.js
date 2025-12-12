@@ -6,6 +6,9 @@
 const FULL_DAY_RATE = 35;
 const HALF_DAY_RATE = 20;
 
+// state
+let currentRate = FULL_DAY_RATE;
+const selectedDays = new Set();
 
 
 /********* colour change days of week *********/
