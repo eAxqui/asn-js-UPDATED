@@ -221,6 +221,72 @@ main.index .flex:last-of-type {
 
 */
 
+
+.booking-page {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: clamp(1rem, 1.2vw + 0.8rem, 1.125rem); /* ~18px desktop */
+}
+
+.booking-page h2 {
+  margin-bottom: 12px;
+}
+
+.day-selector {
+  margin: 12px 0;
+  justify-content: center;
+  gap: 20px;
+}
+
+.day-selector li {
+  width: 60px;
+  padding: 8px 0;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  text-align: center;
+  background-color: #ffffff;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* generic small button style used for full/half */
+.small-button {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  margin: 0 4px;
+}
+
+/* emphasise clickability */
+.blue-hover:hover {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+}
+
+/* spacing helpers */
+.top-margin {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+/* clear button width */
+#clear-button {
+  width: min(200px, 80%);
+  margin: 0 auto;
+}
+
+/* selected state – important for JS logic */
+.clicked {
+  background-color: var(--yellow);
+}
+
+.day-selector li.clicked {
+  background-color: #E5AF42;
+  color: #000000;
+}
+
+
 /************* contact page *************/
 /* TO DO:
     - the main section of the .contact page will use viewport height units effectively, and be centered.
