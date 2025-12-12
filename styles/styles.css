@@ -59,6 +59,58 @@ body {
         - change the cursor to pointer.
 */
 
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem); /* ~48px on desktop */
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  font-size: clamp(2.25rem, 4vw, 2.5rem); /* ~36px desktop */
+  margin-bottom: clamp(0.5rem, 1.5vw, 0.75rem); /* ~12px desktop */
+  font-weight: 600;
+}
+
+.large-text {
+  font-size: clamp(1.25rem, 2.2vw, 1.5rem); /* ~24px desktop */
+}
+
+a {
+  color: #1e3a8a;
+  text-decoration: underline;
+  transition: color 0.2s ease, background-color 0.2s ease,
+    text-decoration-color 0.2s ease;
+}
+
+a:hover {
+  color: #111111;
+}
+
+/* fake buttons */
+.fake-button {
+  background-color: var(--yellow);
+  text-align: center;
+  line-height: 3;
+  border: 1px solid var(--border);
+  display: inline-block;
+  text-decoration: none;
+}
+
+a.fake-button {
+  text-decoration: none; /* button-like links shouldn’t be underlined by default */
+  color: inherit;
+}
+
+/* shared hover behaviour for clickable UI */
+.fake-button:hover,
+.blue-hover:hover {
+  text-decoration: underline;
+  background-color: var(--blue);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
 /************* header/footer styling *************/
 
 /* TO DO:
