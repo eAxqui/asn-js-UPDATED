@@ -34,6 +34,13 @@ body {
   color: #111111;
 }
 
+
+/* flex helper */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
 /* TO DO: all elements with the .flex class applied are to be made into flex-box containers. */
 
 /************* site-wide text styling *************/
