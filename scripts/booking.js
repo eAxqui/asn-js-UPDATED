@@ -102,3 +102,5 @@ function updateCost() {
   costDisplay.textContent = total;
 }
 
+/********* INITIALIZATION *********/
+init();
