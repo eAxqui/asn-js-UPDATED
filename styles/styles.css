@@ -295,3 +295,64 @@ main.index .flex:last-of-type {
     - all form input, textarea, and and button elements will have the same font as the rest of the page, a line-height of 24px, a font-size of 16px, and the same border as other buttons on the site. There will be 24px of space below each of these elements.
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
+
+main.contact {
+  /* use viewport height so it sits nicely between header/footer */
+  min-height: calc(100vh - 210px); /* header + footer approx height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact form {
+  margin-top: 24px;
+}
+
+/* 2-column layout: labels + inputs */
+.contact form .flex {
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.contact label {
+  width: 150px;
+  text-align: right;
+  margin-right: 24px;
+  font-weight: 400;
+}
+
+.contact input,
+.contact textarea {
+  width: 300px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid var(--border);
+  padding: 4px 8px;
+}
+
+.contact textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* button matches other inputs and lines up with textarea’s left edge */
+.contact button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+
+/* 150 (label width) + 24 (gap) = 174 */
+#submit-button {
+  margin-left: 174px;
+  padding: 8px 24px;
+  line-height: 1.5;
+}
