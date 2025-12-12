@@ -24,7 +24,13 @@ const clearButton = document.getElementById("clear-button");
 const costDisplay = document.getElementById("calculated-cost");
 
 
-
+/********* initialise default (full day) *********/
+function init() {
+  currentRate = FULL_DAY_RATE;
+  fullButton.classList.add("clicked");
+  halfButton.classList.remove("clicked");
+  updateCost();
+}
 
 /********* clear days *********/
 // when the clear-button is clicked, the "clicked" class is removed from all days, any other relevant variables are reset, and the calculated cost is set to 0.
