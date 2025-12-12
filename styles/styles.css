@@ -14,6 +14,15 @@ You are encouraged to improve any provided CSS by using modern units and increas
 */
 
 /************* site defaults *************/
+
+/************* COLOURS & GLOBALS *************/
+:root {
+  --yellow: #E5AF42;   /* mustard yellow */
+  --blue: #4278e5;     /* cornflower blue */
+  --border: #000000;
+}
+
+
 body {
   width: 950px;
   margin: 0 auto;
