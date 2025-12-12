@@ -122,6 +122,45 @@ a.fake-button {
     - the footer should have a max height of about 60px, have a font-weight of 200, and the text within will be centered vertically and horizontally to the browser window.
 */
 
+
+header {
+  background-color: var(--yellow);
+  max-height: 150px;
+  padding: 12px 16px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header img {
+  width: 56px;
+  height: auto;
+  margin-right: 8px;
+}
+
+footer {
+  background-color: var(--yellow);
+  max-height: 60px;
+  margin-top: 50px;
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 200;
+  font-size: 0.9rem;
+  gap: 4px;
+}
+
+
 /************* index page *************/
 
 /* TO-DO:
