@@ -171,6 +171,42 @@ footer {
     - the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
 */
 
+
+main.index .flex:first-of-type {
+  /* text + image row */
+  justify-content: space-between;
+  gap: clamp(24px, 4vw, 40px);
+  margin-bottom: 32px;
+}
+
+.index .about-us {
+  flex: 1 1 0;
+}
+
+.index h2 {
+  line-height: 1; /* equal to font-size in effect */
+}
+
+.index p {
+  margin-bottom: 12px;
+}
+
+.index img {
+  width: min(300px, 40vw);
+  height: auto;
+  border-radius: 8px;
+}
+
+/* button row */
+main.index .flex:last-of-type {
+  justify-content: center;
+  gap: 32px;
+}
+
+.index .fake-button.large-text {
+  width: min(250px, 70vw);
+}
+
 /************* bookings page *************/
 
 /* TO-DO:
