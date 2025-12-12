@@ -24,10 +24,14 @@ You are encouraged to improve any provided CSS by using modern units and increas
 
 
 body {
-  width: 950px;
+  max-width: 950px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 16px;
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
+  background-color: #ffffff;
+  color: #111111;
 }
 
 /* TO DO: all elements with the .flex class applied are to be made into flex-box containers. */
