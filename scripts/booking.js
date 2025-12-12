@@ -56,6 +56,12 @@ dayElements.forEach((dayEl) => {
 /********* clear days *********/
 // when the clear-button is clicked, the "clicked" class is removed from all days, any other relevant variables are reset, and the calculated cost is set to 0.
 
+/********* clear all days *********/
+clearButton.addEventListener("click", () => {
+  selectedDays.clear();
+  dayElements.forEach((dayEl) => dayEl.classList.remove("clicked"));
+  updateCost();
+});
 
 
 
