@@ -39,4 +39,9 @@ const HALF_DAY_RATE = 20;
 /********* calculate *********/
 // when a calculation is needed, set the innerHTML of the calculated-cost element to the appropriate value
 
+/********* helper: recalc and display total *********/
+function updateCost() {
+  const total = selectedDays.size * currentRate;
+  costDisplay.textContent = total;
+}
 
