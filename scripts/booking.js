@@ -32,6 +32,27 @@ function init() {
   updateCost();
 }
 
+
+/********* day selection – can select MANY *********/
+dayElements.forEach((dayEl) => {
+  dayEl.addEventListener("click", () => {
+    const dayId = dayEl.id;
+
+    // toggle visual state
+    dayEl.classList.toggle("clicked");
+
+    if (dayEl.classList.contains("clicked")) {
+      // add to selected set
+      selectedDays.add(dayId);
+    } else {
+      // remove from selected set
+      selectedDays.delete(dayId);
+    }
+
+    updateCost();
+  });
+});
+
 /********* clear days *********/
 // when the clear-button is clicked, the "clicked" class is removed from all days, any other relevant variables are reset, and the calculated cost is set to 0.
 
